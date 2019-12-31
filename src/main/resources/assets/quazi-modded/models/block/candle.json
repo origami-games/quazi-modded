@@ -1,0 +1,38 @@
+{
+	"textures": {
+		"texture": "quazi-modded:block/candle",
+        "particle": "quazi-modded:block/candle"
+	},
+	"elements": [
+		{
+			"from": [6, 0, 6],
+			"to": [10, 6, 10],
+			"faces": {
+				"north": {"uv": [2.4, 4.8, 6.4, 10.8], "texture": "#texture"},
+				"east": {"uv": [2.4, 4.8, 6.4, 10.8], "texture": "#texture"},
+				"south": {"uv": [2.4, 4.8, 6.4, 10.8], "texture": "#texture"},
+				"west": {"uv": [2.4, 4.8, 6.4, 10.8], "texture": "#texture"},
+				"up": {"uv": [7.2, 4.8, 11.2, 8.8], "texture": "#texture"},
+				"down": {"uv": [7.2, 9.6, 11.2, 13.6], "texture": "#texture"}
+			}
+		},
+		{
+			"from": [7.5, 6, 8],
+			"to": [8.5, 8, 8],
+			"rotation": {"angle": 45, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [8, 9.6, 9.5, 12.7], "texture": "#texture"},
+				"south": {"uv": [9.6, 9.6, 11.1, 12.7], "texture": "#texture"}
+			}
+		},
+		{
+			"from": [8, 6, 7.5],
+			"to": [8, 8, 8.5],
+			"rotation": {"angle": 45, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"east": {"uv": [9.6, 9.6, 11.1, 12.7], "texture": "#texture"},
+				"west": {"uv": [8.8, 9.6, 10.3, 12.7], "texture": "#texture"}
+			}
+		}
+	]
+}

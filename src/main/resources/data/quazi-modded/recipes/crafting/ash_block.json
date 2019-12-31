@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "##",
+        "##"
+    ],
+    "key": {
+        "#": {
+            "item": "quazi-modded:ash"
+        }
+    },
+    "result": {
+        "item": "quazi-modded:ash_block"
+    }
+}

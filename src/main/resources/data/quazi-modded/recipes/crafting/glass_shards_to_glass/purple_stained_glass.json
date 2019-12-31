@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "glass_shards_to_glass",
+    "pattern": [
+        "##",
+        "##"
+    ],
+    "key": {
+        "#": {
+            "item": "quazi-modded:purple_glass_shard"
+        }
+    },
+    "result": {
+        "item": "minecraft:purple_stained_glass"
+    }
+}

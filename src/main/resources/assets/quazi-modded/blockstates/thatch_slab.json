@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=bottom": { "model": "quazi-modded:block/thatch_slab" },
+        "type=top": { "model": "quazi-modded:block/thatch_slab_top" },
+        "type=double": { "model": "quazi-modded:block/thatch" }
+    }
+}

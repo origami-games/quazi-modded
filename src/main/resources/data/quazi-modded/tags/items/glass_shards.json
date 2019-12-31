@@ -1,0 +1,22 @@
+{
+    "replace": false,
+    "values": [
+        "quazi-modded:glass_shard",
+        "quazi-modded:white_glass_shard",
+        "quazi-modded:orange_glass_shard",
+        "quazi-modded:magenta_glass_shard",
+        "quazi-modded:light_blue_glass_shard",
+        "quazi-modded:yellow_glass_shard",
+        "quazi-modded:lime_glass_shard",
+        "quazi-modded:pink_glass_shard",
+        "quazi-modded:gray_glass_shard",
+        "quazi-modded:light_gray_glass_shard",
+        "quazi-modded:cyan_glass_shard",
+        "quazi-modded:purple_glass_shard",
+        "quazi-modded:blue_glass_shard",
+        "quazi-modded:brown_glass_shard",
+        "quazi-modded:green_glass_shard",
+        "quazi-modded:red_glass_shard",
+        "quazi-modded:black_glass_shard"
+    ]
+}

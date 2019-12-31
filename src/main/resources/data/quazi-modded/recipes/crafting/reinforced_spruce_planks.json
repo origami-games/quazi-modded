@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "reinforced_planks",
+    "pattern": [
+        " X ",
+        "X#X",
+        " X "
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:spruce_planks"
+        },
+        "X": {
+            "item": "minecraft:iron_ingot"
+        }
+    },
+    "result": {
+        "item": "quazi-modded:reinforced_spruce_planks"
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "type": "crafting_shaped", "group": "universal_dyeing.terracotta",
+    "pattern": [
+        "###",
+        "#$#",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "tag": "minecraft:terracotta"
+        },
+        "$": {
+            "item": "minecraft:lapis_lazuli"
+        }
+    },
+    "result": {
+        "item": "minecraft:blue_terracotta",
+        "count": 8
+    }
+}

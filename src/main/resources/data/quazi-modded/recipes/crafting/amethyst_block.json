@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "###",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "quazi-modded:amethyst"
+        }
+    },
+    "result": {
+        "item": "quazi-modded:amethyst_block"
+    }
+}

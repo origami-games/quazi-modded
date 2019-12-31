@@ -1,0 +1,18 @@
+{
+    "required": true,
+    "package": "co.origamigames.quazimodded.mixins",
+    "compatibilityLevel": "JAVA_8",
+    "mixins": [
+        "PlainsBiomeMixin",
+        "ItemsMixin"
+    ],
+    "client": [
+        "BowItemMixin",
+        "EnchantingTableBlockMixin",
+        "EnchantingTableBlockEntityMixin",
+        "EnchantingTableContainerMixin"
+    ],
+    "injectors": {
+        "defaultRequire": 1
+    }
+}

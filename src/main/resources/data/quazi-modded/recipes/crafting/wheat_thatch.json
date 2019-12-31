@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "quazi-modded:thatch"
+        }
+    ],
+    "result": {
+        "item": "minecraft:wheat",
+        "count": 4
+    }
+}

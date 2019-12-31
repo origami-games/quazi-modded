@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:campfire_cooking",
+    "ingredient": {
+        "item": "quazi-modded:calamari"
+    },
+    "result": "quazi-modded:cooked_calamari",
+    "experience": 0.35,
+    "cookingtime": 600
+}

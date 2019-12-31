@@ -1,0 +1,20 @@
+{
+    "type": "crafting_shaped", "group": "universal_dyeing.glass",
+    "pattern": [
+        "###",
+        "#$#",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "tag": "minecraft:stained_glass"
+        },
+        "$": {
+            "item": "minecraft:gray_dye"
+        }
+    },
+    "result": {
+        "item": "minecraft:gray_stained_glass",
+        "count": 8
+    }
+}

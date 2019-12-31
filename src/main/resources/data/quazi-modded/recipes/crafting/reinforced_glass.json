@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " X ",
+        "X#X",
+        " X "
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:glass"
+        },
+        "X": {
+            "item": "minecraft:iron_ingot"
+        }
+    },
+    "result": {
+        "item": "quazi-modded:reinforced_glass"
+    }
+}

@@ -1,0 +1,37 @@
+{
+    "schemaVersion": 1,
+    "id": "quazi-modded",
+    "version": "${version}",
+    "name": "Quazi-Modded",
+    "description": "Quazi-Modded is a Minecraft mod that aims to add smaller, standalone features to survival mode. It has a focus on consistent, vanilla-style art direction and creating an atmosphere.",
+    "authors": [
+        "Origami Games"
+    ],
+    "contact": {
+        "homepage": "https://origami-games.github.io/quazi-modded",
+        "sources": "https://gitlab.com/origami-games/quazi-modded",
+        "issues": "https://gitlab.com/origami-games/quazi-modded/issues"
+    },
+    "license": "GPL-3.0",
+    "icon": "pack.png",
+    "environment": "*",
+    "entrypoints": {
+        "main": [
+            "co.origamigames.quazimodded.QuaziModded"
+        ],
+        "client": [
+            "co.origamigames.quazimodded.QuaziModdedClient"
+        ]
+    },
+    "mixins": [
+        "quazi-modded.mixins.json"
+    ],
+    "depends": {
+        "fabricloader": ">=0.7.2",
+        "fabric": "*",
+        "minecraft": "1.15.x"
+    },
+    "suggests": {
+        "flamingo": "*"
+    }
+}

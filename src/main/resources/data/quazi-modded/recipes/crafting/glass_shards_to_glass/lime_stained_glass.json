@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "glass_shards_to_glass",
+    "pattern": [
+        "##",
+        "##"
+    ],
+    "key": {
+        "#": {
+            "item": "quazi-modded:lime_glass_shard"
+        }
+    },
+    "result": {
+        "item": "minecraft:lime_stained_glass"
+    }
+}

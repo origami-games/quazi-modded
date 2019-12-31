@@ -1,0 +1,20 @@
+{
+    "type": "crafting_shaped", "group": "universal_dyeing.glass_pane",
+    "pattern": [
+        "###",
+        "#$#",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "tag": "minecraft:stained_glass_pane"
+        },
+        "$": {
+            "item": "minecraft:black_dye"
+        }
+    },
+    "result": {
+        "item": "minecraft:black_stained_glass_pane",
+        "count": 8
+    }
+}
