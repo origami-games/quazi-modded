@@ -6,6 +6,8 @@ v0.1.0-pre17 :: 1.15.x-fabric
     - Amethyst Ore :: overworld, Y<=16, veins of max 8
     - Lead Ore :: overworld, Y<=64, veins of max 8
     - Ash Block :: nether, similar to Magma generation
++ Lead Helmet
+    - primary feature not yet fully implemented
 + Sugar Cane Block texture
 * Fixed Candle recipe not parsing
 ```
