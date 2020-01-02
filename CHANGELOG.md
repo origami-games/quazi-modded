@@ -1,5 +1,16 @@
 # Changelog
 
+** All v0.1.0-pre builds are internal group releases
+
+v0.1.0-pre18 :: 1.15.x-fabric
+```diff
++ Lead Helmet lang and recipe
++ Actual Quilted Wool textures
++ Glass Shard textures
+```
+
+---
+
 v0.1.0-pre17 :: 1.15.x-fabric
 ```diff
 + Amethyst Ore, Lead Ore and Ash Block generation
