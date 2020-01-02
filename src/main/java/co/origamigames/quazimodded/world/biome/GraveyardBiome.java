@@ -55,6 +55,7 @@ public class GraveyardBiome extends Biome {
                                 .configure(new CountExtraChanceDecoratorConfig(0, 0.05F, 1))));
 
         DefaultBiomeFeatures.addLandCarvers(biome);
+        DefaultBiomeFeatures.addDesertDeadBushes(biome);
     }
 
     static {

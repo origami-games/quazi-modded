@@ -6,7 +6,7 @@ import net.minecraft.world.gen.surfacebuilder.SurfaceConfig;
 import net.minecraft.world.gen.surfacebuilder.TernarySurfaceConfig;
 
 public abstract class QMSurfaceBuilder<C extends SurfaceConfig> {
-    
+
     public static final BlockState GRASS_BLOCK;
     public static final BlockState GRAVEL;
     public static final BlockState DIRT;

@@ -2,6 +2,15 @@
 
 ** All v0.1.0-pre builds are internal group releases
 
+v0.1.0-pre19 :: 1.15.x-fabric
+```diff
++ Dead Bushes in the Graveyard biome
+* Fixed Squid and Glass addition loot tables being the wrong way around
+* A bit of clean-up
+```
+
+---
+
 v0.1.0-pre18 :: 1.15.x-fabric
 ```diff
 + Lead Helmet lang and recipe

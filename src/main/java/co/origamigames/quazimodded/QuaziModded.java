@@ -18,11 +18,11 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
 public class QuaziModded implements ModInitializer {
-    
+
     public static final String MOD_ID = "quazi-modded";
     public static final ItemGroup ITEM_GROUP = FabricItemGroupBuilder.build(new Identifier(MOD_ID, "item_group"), () -> new ItemStack(QMBlocks.REINFORCED_GLASS));
 
-    public static final Tag<Block> ENCHANTMENT_BOOSTERS = TagRegistry.block(new Identifier(MOD_ID, "enchantment_boosters"));    
+    public static final Tag<Block> ENCHANTMENT_BOOSTERS = TagRegistry.block(new Identifier(MOD_ID, "enchantment_boosters"));
 
 	@Override
 	public void onInitialize() {

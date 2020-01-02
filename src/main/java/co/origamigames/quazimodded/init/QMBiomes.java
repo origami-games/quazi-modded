@@ -17,14 +17,14 @@ public class QMBiomes {
         addOverworldBiome(GRAVEYARD, .5d);
     }
 
-    private static Biome register(String id, Biome biome) {
-        return Registry.register(Registry.BIOME, new Identifier(QuaziModded.MOD_ID, id), biome);
-    }
-
     static void addOverworldBiome(Biome biome, double weight) {
         OverworldBiomes.addContinentalBiome(biome, OverworldClimate.DRY, weight / 2);
         OverworldBiomes.addContinentalBiome(biome, OverworldClimate.TEMPERATE, weight / 2);
 
         FabricBiomes.addSpawnBiome(biome);
+    }
+
+    private static Biome register(String id, Biome biome) {
+        return Registry.register(Registry.BIOME, new Identifier(QuaziModded.MOD_ID, id), biome);
     }
 }

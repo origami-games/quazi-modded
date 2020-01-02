@@ -7,7 +7,7 @@ import net.fabricmc.api.ClientModInitializer;
 // import net.fabricmc.fabric.api.client.rendereregistry.v1.EntityRendererRegistry;
 
 public class QuaziModdedClient implements ClientModInitializer {
-    
+
     @Override
     // @SuppressWarnings({ "unchecked" })
     public void onInitializeClient() {

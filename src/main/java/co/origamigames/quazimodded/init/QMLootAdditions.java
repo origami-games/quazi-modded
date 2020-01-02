@@ -69,7 +69,7 @@ public class QMLootAdditions {
 
     public static void registerAll() {
         LootTableLoadingCallback.EVENT.register((resourceManager, lootManager, id, supplier, setter) -> {
-            if (GLASS_BLOCK.equals(id)) {
+            if (SQUID_ENTITY.equals(id)) {
                 supplier.copyFrom(lootManager.getSupplier(SQUID_ENTITY_ADDITIONS));
             } else if (ABANDONED_MINESHAFT_CHEST.equals(id)) {
                 supplier.copyFrom(lootManager.getSupplier(ABANDONED_MINESHAFT_CHEST_ADDITIONS));
@@ -83,7 +83,7 @@ public class QMLootAdditions {
                 supplier.copyFrom(lootManager.getSupplier(WOODLAND_MANSION_CHEST_ADDITIONS));
             } else if (VILLAGE_ARMORER_CHEST.equals(id)) {
                 supplier.copyFrom(lootManager.getSupplier(VILLAGE_ARMORER_CHEST_ADDITIONS));
-            } else if (SQUID_ENTITY.equals(id)) {
+            } else if (GLASS_BLOCK.equals(id)) {
                 supplier.copyFrom(lootManager.getSupplier(GLASS_BLOCK_ADDITIONS));
             } else if (WHITE_GLASS_BLOCK.equals(id)) {
                 supplier.copyFrom(lootManager.getSupplier(WHITE_GLASS_BLOCK_ADDITIONS));
