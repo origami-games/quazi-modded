@@ -1,20 +1,20 @@
 {
-  "type": "crafting_shaped",
-  "group": "stone_pickaxe",
-  "pattern": [
-    "DDD",
-    " S ",
-    " S "
-  ],
-  "key": {
-    "D": {
-      "item": "minecraft:diorite"
+    "type": "crafting_shaped",
+    "group": "stone_pickaxe",
+    "pattern": [
+        "###",
+        " S ",
+        " S "
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:diorite"
+        },
+        "S": {
+            "item": "minecraft:stick"
+        }
     },
-    "S": {
-      "item": "minecraft:stick"
+    "result": {
+        "item": "minecraft:stone_pickaxe"
     }
-  },
-  "result": {
-    "item": "minecraft:stone_pickaxe"
-  }
 }

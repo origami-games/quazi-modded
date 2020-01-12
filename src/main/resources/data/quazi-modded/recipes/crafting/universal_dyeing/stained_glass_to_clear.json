@@ -1,5 +1,6 @@
 {
-    "type": "crafting_shaped", "group": "universal_dyeing.glass",
+    "type": "crafting_shaped",
+    "group": "quazi-modded:universal_dyeing.glass",
     "pattern": [
         "###",
         "#$#",

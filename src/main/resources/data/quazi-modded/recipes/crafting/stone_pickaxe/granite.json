@@ -1,20 +1,20 @@
 {
-  "type": "crafting_shaped",
-  "group": "stone_pickaxe",
-  "pattern": [
-    "GGG",
-    " S ",
-    " S "
-  ],
-  "key": {
-    "G": {
-      "item": "minecraft:granite"
+    "type": "crafting_shaped",
+    "group": "stone_pickaxe",
+    "pattern": [
+        "###",
+        " S ",
+        " S "
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:granite"
+        },
+        "S": {
+            "item": "minecraft:stick"
+        }
     },
-    "S": {
-      "item": "minecraft:stick"
+    "result": {
+        "item": "minecraft:stone_pickaxe"
     }
-  },
-  "result": {
-    "item": "minecraft:stone_pickaxe"
-  }
 }

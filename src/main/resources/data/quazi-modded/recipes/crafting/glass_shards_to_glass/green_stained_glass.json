@@ -1,6 +1,6 @@
 {
     "type": "minecraft:crafting_shaped",
-    "group": "glass_shards_to_glass",
+    "group": "quazi-modded:glass_shards_to_glass",
     "pattern": [
         "##",
         "##"

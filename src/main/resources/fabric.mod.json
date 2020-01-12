@@ -5,7 +5,15 @@
     "name": "Quazi-Modded",
     "description": "Quazi-Modded is a Minecraft mod that aims to add smaller, standalone features to survival mode. It has a focus on consistent, vanilla-style art direction and creating an atmosphere.",
     "authors": [
-        "Origami Games"
+        {
+            "name": "Origami Games",
+            "contact": {
+                "homepage": "https://origami-games.github.io",
+                "twitter": "https://twitter.com/origamimaps",
+                "discord": "https://origami-games.github.io/discord",
+                "patreon": "https://origami-games.github.io/patreon"
+            }
+        }
     ],
     "contact": {
         "homepage": "https://origami-games.github.io/quazi-modded",

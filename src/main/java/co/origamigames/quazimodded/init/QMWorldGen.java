@@ -31,7 +31,7 @@ public class QMWorldGen {
     }
 
     // configurations
-    static ConfiguredFeature<?, ?> defaultOverworldOre(Block block, int size, int count, int bottomOffset,
+    private static ConfiguredFeature<?, ?> defaultOverworldOre(Block block, int size, int count, int bottomOffset,
             int topOffset, int maximum) {
         return Feature.ORE
                 .configure(new OreFeatureConfig(OreFeatureConfig.Target.NATURAL_STONE, block.getDefaultState(), size))
@@ -39,7 +39,7 @@ public class QMWorldGen {
                         .configure(new RangeDecoratorConfig(count, bottomOffset, topOffset, maximum)));
     }
 
-    static ConfiguredFeature<?, ?> defaultMagmaDecorator(OreFeatureConfig.Target target, Block block, int size,
+    private static ConfiguredFeature<?, ?> defaultMagmaDecorator(OreFeatureConfig.Target target, Block block, int size,
             int count) {
         return Feature.ORE.configure(new OreFeatureConfig(target, block.getDefaultState(), size))
                 .createDecoratedFeature(Decorator.MAGMA.configure(new CountDecoratorConfig(count)));

@@ -1,5 +1,6 @@
 package co.origamigames.quazimodded;
 
+import co.origamigames.quazimodded.init.QMBlocks;
 // import co.origamigames.quazimodded.entity.OwlEntityModel;
 // import co.origamigames.quazimodded.entity.OwlEntityRenderer;
 // import co.origamigames.quazimodded.init.QMEntities;
@@ -12,5 +13,6 @@ public class QuaziModdedClient implements ClientModInitializer {
     // @SuppressWarnings({ "unchecked" })
     public void onInitializeClient() {
         // EntityRendererRegistry.INSTANCE.register(QMEntities.OWL, (dispatcher, context) -> new OwlEntityRenderer(dispatcher, new OwlEntityModel(), 0.7F));
+        QMBlocks.setBlockRenderLayers();
     }
 }

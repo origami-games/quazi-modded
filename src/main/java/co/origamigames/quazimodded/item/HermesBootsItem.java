@@ -25,8 +25,8 @@ public class HermesBootsItem extends ArmorItem {
             multimap.put(EntityAttributes.MOVEMENT_SPEED.getId(),
                     new EntityAttributeModifier(MOVEMENT_SPEED_MODIFIER_UUID, "Movement speed modifier",
                             (double) this.movementSpeed / 100, EntityAttributeModifier.Operation.MULTIPLY_BASE));
-      }
+        }
 
-      return multimap;
+        return multimap;
     }
 }

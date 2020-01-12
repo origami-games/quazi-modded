@@ -13,6 +13,10 @@ group = project.maven_group
 minecraft {
 }
 
+repositories {
+	maven { url "http://server.bbkr.space:8081/artifactory/libs-release" }
+}
+
 dependencies {
 	//to change the versions see the gradle.properties file
 	minecraft "com.mojang:minecraft:${project.minecraft_version}"
@@ -24,6 +28,10 @@ dependencies {
 
 	// PSA: Some older mods, compiled on Loom 0.2.1, might have outdated Maven POMs.
 	// You may need to force-disable transitiveness on them.
+//	modImplementation "io.github.cottonmc:VMulti:${project.vmulti_version}"
+//	include "io.github.cottonmc:VMulti:${project.vmulti_version}"
+	modImplementation "io.github.cottonmc:BeeCompatible:${project.beecompatible_version}"
+	include "io.github.cottonmc:BeeCompatible:${project.beecompatible_version}"
 }
 
 processResources {

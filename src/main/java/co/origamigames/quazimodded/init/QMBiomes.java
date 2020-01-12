@@ -17,7 +17,7 @@ public class QMBiomes {
         addOverworldBiome(GRAVEYARD, .5d);
     }
 
-    static void addOverworldBiome(Biome biome, double weight) {
+    private static void addOverworldBiome(Biome biome, double weight) {
         OverworldBiomes.addContinentalBiome(biome, OverworldClimate.DRY, weight / 2);
         OverworldBiomes.addContinentalBiome(biome, OverworldClimate.TEMPERATE, weight / 2);
 

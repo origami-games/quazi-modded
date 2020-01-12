@@ -2,6 +2,29 @@
 
 ** All v0.1.0-pre builds are internal group releases
 
+v0.1.0-pre21 :: 1.15.x-fabric
+```diff
++ Bees are attracted to Sugar Blocks as if they were flowers 🐝
++ Sugar Block texture
+
+- Reused code from VMulti (see KI:1)
+```
+- Known issues
+    1. More Wood Bookshelves currently don't boost Enchanting Tables
+        - Library causing crash issue, waiting for a fix
+---
+
+v0.1.0-pre20 :: 1.15.x-fabric
+```diff
++ 4x Coral or Coral Fans can be crafted into a Coral Block
+- Lead tools
+- Unused Plains biome mixin
+* Updated Amethyst textures
+* Fixed Reinforced Glass opacity
+```
+
+---
+
 v0.1.0-pre19 :: 1.15.x-fabric
 ```diff
 + Dead Bushes in the Graveyard biome

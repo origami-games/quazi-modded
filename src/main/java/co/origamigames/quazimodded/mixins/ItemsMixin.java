@@ -14,14 +14,8 @@ import net.minecraft.item.Items;
 
 @Mixin(Items.class)
 public class ItemsMixin {
-
-    @ModifyArg(
-        method = "<clinit>",
-        at = @At(value = "INVOKE", target = "Lnet/minecraft/item/Item;<init>(Lnet/minecraft/item/Item$Settings;)V"),
-        slice = @Slice(
-            from = @At(value = "CONSTANT", args = "stringValue=honeycomb"),
-            to = @At(value = "FIELD", target = "Lnet/minecraft/item/Items;HONEYCOMB:Lnet/minecraft/item/Item;", opcode = Opcodes.PUTSTATIC)))
+    @ModifyArg(method = "<clinit>", at = @At(value = "INVOKE", target = "Lnet/minecraft/item/Item;<init>(Lnet/minecraft/item/Item$Settings;)V"), slice = @Slice(from = @At(value = "CONSTANT", args = "stringValue=honeycomb"), to = @At(value = "FIELD", target = "Lnet/minecraft/item/Items;HONEYCOMB:Lnet/minecraft/item/Item;", opcode = Opcodes.PUTSTATIC)))
     private static Item.Settings modifyItemSettings(Item.Settings original) {
-                return original.recipeRemainder(QMItems.BEESWAX);
+        return original.recipeRemainder(QMItems.BEESWAX);
     }
 }

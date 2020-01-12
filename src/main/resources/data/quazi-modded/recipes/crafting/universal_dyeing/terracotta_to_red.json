@@ -1,5 +1,6 @@
 {
-    "type": "crafting_shaped", "group": "universal_dyeing.terracotta",
+    "type": "crafting_shaped",
+    "group": "quazi-modded:universal_dyeing.terracotta",
     "pattern": [
         "###",
         "#$#",

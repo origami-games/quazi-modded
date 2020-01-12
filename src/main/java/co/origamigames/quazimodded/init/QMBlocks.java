@@ -3,6 +3,7 @@ package co.origamigames.quazimodded.init;
 import co.origamigames.quazimodded.QuaziModded;
 import co.origamigames.quazimodded.block.*;
 import net.fabricmc.fabric.api.block.FabricBlockSettings;
+import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.tools.FabricToolTags;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
@@ -12,6 +13,7 @@ import net.minecraft.block.Material;
 import net.minecraft.block.OreBlock;
 import net.minecraft.block.SlabBlock;
 import net.minecraft.block.WallBlock;
+import net.minecraft.client.render.RenderLayer;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
@@ -19,38 +21,54 @@ import net.minecraft.util.registry.Registry;
 public class QMBlocks {
 
     // define blocks
-    public static final Block ASH_BLOCK = new FallingBlock(FabricBlockSettings.copy(Blocks.SAND).breakByTool(FabricToolTags.PICKAXES).build());
+    public static final Block ASH_BLOCK = new FallingBlock(
+            FabricBlockSettings.copy(Blocks.SAND).breakByTool(FabricToolTags.PICKAXES).build());
 
-    public static final Block AMETHYST_ORE = new OreBlock(FabricBlockSettings.of(Material.STONE).strength(3.0F, 3.0F).build());
-    public static final Block AMETHYST_BLOCK = new Block(FabricBlockSettings.copy(Blocks.DIAMOND_BLOCK).build());
-    public static final Block LEAD_ORE = new OreBlock(FabricBlockSettings.of(Material.STONE).strength(3.0F, 3.0F).build());
-    public static final Block LEAD_BLOCK = new Block(FabricBlockSettings.copy(Blocks.DIAMOND_BLOCK).build());
+    public static final Block AMETHYST_ORE = new OreBlock(
+            FabricBlockSettings.of(Material.STONE).strength(3.0F, 3.0F).build());
+    public static final Block AMETHYST_BLOCK = registerBlock(Blocks.DIAMOND_BLOCK);
+    public static final Block LEAD_ORE = new OreBlock(
+            FabricBlockSettings.of(Material.STONE).strength(3.0F, 3.0F).build());
+    public static final Block LEAD_BLOCK = registerBlock(Blocks.IRON_BLOCK);
 
-    public static final Block BAMBOO_BLOCK = new Block(FabricBlockSettings.copy(Blocks.OAK_PLANKS).build());
-    public static final Block CHARCOAL_BLOCK = new Block(FabricBlockSettings.copy(Blocks.COAL_BLOCK).build());
-    public static final Block KELP_BLOCK = new Block(FabricBlockSettings.copy(Blocks.DRIED_KELP_BLOCK).build());
-    public static final Block SUGAR_BLOCK = new FallingBlock(FabricBlockSettings.copy(Blocks.SAND).breakByTool(FabricToolTags.SHOVELS).build());
-    public static final Block SUGAR_CANE_BLOCK = new Block(FabricBlockSettings.copy(Blocks.DRIED_KELP_BLOCK).build());
+    public static final Block BAMBOO_BLOCK = registerBlock(Blocks.OAK_PLANKS);
+    public static final Block CHARCOAL_BLOCK = registerBlock(Blocks.COAL_BLOCK);
+    public static final Block KELP_BLOCK = registerBlock(Blocks.DRIED_KELP_BLOCK);
+    public static final Block SUGAR_BLOCK = new FallingBlock(
+            FabricBlockSettings.copy(Blocks.SAND).breakByTool(FabricToolTags.SHOVELS).build());
+    public static final Block SUGAR_CANE_BLOCK = registerBlock(Blocks.DRIED_KELP_BLOCK);
 
-    public static final Block THATCH = new Block(FabricBlockSettings.copy(Blocks.HAY_BLOCK).build());
+    public static final Block THATCH = registerBlock(Blocks.HAY_BLOCK);
     public static final Block THATCH_SLAB = new SlabBlock(FabricBlockSettings.copy(Blocks.HAY_BLOCK).build());
-    public static final Block THATCH_STAIRS = new CustomStairsBlock(THATCH.getDefaultState(), FabricBlockSettings.copy(Blocks.HAY_BLOCK).build());
+    public static final Block THATCH_STAIRS = new QMStairsBlock(THATCH.getDefaultState(),
+            FabricBlockSettings.copy(Blocks.HAY_BLOCK).build());
     public static final Block THATCH_WALL = new WallBlock(FabricBlockSettings.copy(Blocks.HAY_BLOCK).build());
 
-    public static final Block REINFORCED_GLASS = new GlassBlock(FabricBlockSettings.copy(Blocks.GLASS).breakByTool(FabricToolTags.PICKAXES).resistance(360000000.0F).build());
-    public static final Block REINFORCED_GLASS_PANE = new CustomPaneBlock(FabricBlockSettings.copy(Blocks.GLASS_PANE).breakByTool(FabricToolTags.PICKAXES).resistance(360000000.0F).build());
-    public static final Block REINFORCED_STONE = new PistonImmovableBlock(FabricBlockSettings.copy(Blocks.WHITE_WOOL).sounds(BlockSoundGroup.STONE).breakByTool(FabricToolTags.PICKAXES).strength(0.8F, 360000000.0F).build());
-    public static final Block REINFORCED_BRICKS = new Block(FabricBlockSettings.copy(Blocks.BRICKS).strength(0.8F, 360000000.0F).build());
-    public static final Block REINFORCED_ACACIA_PLANKS = new Block(FabricBlockSettings.copy(Blocks.ACACIA_PLANKS).strength(0.8F, 360000000.0F).build());
-    public static final Block REINFORCED_BIRCH_PLANKS = new Block(FabricBlockSettings.copy(Blocks.BIRCH_PLANKS).strength(0.8F, 360000000.0F).build());
-    public static final Block REINFORCED_DARK_OAK_PLANKS = new Block(FabricBlockSettings.copy(Blocks.DARK_OAK_PLANKS).strength(0.8F, 360000000.0F).build());
-    public static final Block REINFORCED_JUNGLE_PLANKS = new Block(FabricBlockSettings.copy(Blocks.JUNGLE_PLANKS).strength(0.8F, 360000000.0F).build());
-    public static final Block REINFORCED_OAK_PLANKS = new Block(FabricBlockSettings.copy(Blocks.OAK_PLANKS).strength(0.8F, 360000000.0F).build());
-    public static final Block REINFORCED_SPRUCE_PLANKS = new Block(FabricBlockSettings.copy(Blocks.SPRUCE_PLANKS).strength(0.8F, 360000000.0F).build());
+    public static final Block REINFORCED_GLASS = new GlassBlock(FabricBlockSettings.copy(Blocks.GLASS).nonOpaque()
+            .breakByTool(FabricToolTags.PICKAXES).resistance(360000000.0F).build());
+    public static final Block REINFORCED_GLASS_PANE = new QMPaneBlock(FabricBlockSettings.copy(Blocks.GLASS_PANE)
+            .nonOpaque().breakByTool(FabricToolTags.PICKAXES).resistance(360000000.0F).build());
+    public static final Block REINFORCED_STONE = new PistonImmovableBlock(FabricBlockSettings.copy(Blocks.WHITE_WOOL)
+            .sounds(BlockSoundGroup.STONE).breakByTool(FabricToolTags.PICKAXES).strength(0.8F, 360000000.0F).build());
+    public static final Block REINFORCED_BRICKS = new Block(
+            FabricBlockSettings.copy(Blocks.BRICKS).strength(0.8F, 360000000.0F).build());
+    public static final Block REINFORCED_ACACIA_PLANKS = new Block(
+            FabricBlockSettings.copy(Blocks.ACACIA_PLANKS).strength(0.8F, 360000000.0F).build());
+    public static final Block REINFORCED_BIRCH_PLANKS = new Block(
+            FabricBlockSettings.copy(Blocks.BIRCH_PLANKS).strength(0.8F, 360000000.0F).build());
+    public static final Block REINFORCED_DARK_OAK_PLANKS = new Block(
+            FabricBlockSettings.copy(Blocks.DARK_OAK_PLANKS).strength(0.8F, 360000000.0F).build());
+    public static final Block REINFORCED_JUNGLE_PLANKS = new Block(
+            FabricBlockSettings.copy(Blocks.JUNGLE_PLANKS).strength(0.8F, 360000000.0F).build());
+    public static final Block REINFORCED_OAK_PLANKS = new Block(
+            FabricBlockSettings.copy(Blocks.OAK_PLANKS).strength(0.8F, 360000000.0F).build());
+    public static final Block REINFORCED_SPRUCE_PLANKS = new Block(
+            FabricBlockSettings.copy(Blocks.SPRUCE_PLANKS).strength(0.8F, 360000000.0F).build());
 
-    public static final Block LIT_REDSTONE_LAMP = new Block(FabricBlockSettings.copy(Blocks.REDSTONE_LAMP).build());
+    public static final Block LIT_REDSTONE_LAMP = registerBlock(Blocks.REDSTONE_LAMP);
 
-    public static final Block CANDLE = new CandleBlock(FabricBlockSettings.of(Material.PART).lightLevel(14).sounds(BlockSoundGroup.STONE).build());
+    public static final Block CANDLE = new CandleBlock(
+            FabricBlockSettings.of(Material.PART).lightLevel(14).sounds(BlockSoundGroup.STONE).build());
 
     public static final Block ACACIA_BOOKSHELF = registerBookshelf();
     public static final Block BIRCH_BOOKSHELF = registerBookshelf();
@@ -75,7 +93,7 @@ public class QMBlocks {
     public static final Block RED_QUILTED_WOOL = registerBlock(Blocks.RED_WOOL);
     public static final Block BLACK_QUILTED_WOOL = registerBlock(Blocks.BLACK_WOOL);
 
-    public static final Block GRAVESTONE = new GravestoneBlock(FabricBlockSettings.of(Material.STONE).sounds(BlockSoundGroup.STONE).build());
+    public static final Block GRAVESTONE = registerBlock(Blocks.STONE);
 
     public static void registerAll() {
         register("ash_block", ASH_BLOCK);
@@ -139,15 +157,21 @@ public class QMBlocks {
         QMItems.registerBlockItems();
     }
 
-    static void register(String id, Block block) {
+    private static void register(String id, Block block) {
         Registry.register(Registry.BLOCK, new Identifier(QuaziModded.MOD_ID, id), block);
     }
-
-    public static Block registerBookshelf() {
+    private static Block registerBookshelf() {
         return new Block(FabricBlockSettings.copy(Blocks.BOOKSHELF).build());
     }
-
-    public static Block registerBlock(Block copyBlock) {
+    private static Block registerBlock(Block copyBlock) {
         return new Block(FabricBlockSettings.copy(copyBlock).build());
+    }
+
+    public static void setBlockRenderLayers() {
+        setGlassBlockRenderLayer(REINFORCED_GLASS);
+        setGlassBlockRenderLayer(REINFORCED_GLASS_PANE);
+    }
+    private static void setGlassBlockRenderLayer(Block block) {
+        BlockRenderLayerMap.INSTANCE.putBlock(block, RenderLayer.getCutout());
     }
 }

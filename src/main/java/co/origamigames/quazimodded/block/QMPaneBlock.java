@@ -2,8 +2,8 @@ package co.origamigames.quazimodded.block;
 
 import net.minecraft.block.PaneBlock;
 
-public class CustomPaneBlock extends PaneBlock {
-    public CustomPaneBlock(Settings settings) {
+public class QMPaneBlock extends PaneBlock {
+    public QMPaneBlock(Settings settings) {
         super(settings);
     }
 }

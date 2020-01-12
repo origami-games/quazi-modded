@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "quazi-modded:fan_to_coral_block",
+    "pattern": [
+        "##",
+        "##"
+    ],
+    "key": {
+        "#": {
+            "tag": "quazi-modded:brain_corals"
+        }
+    },
+    "result": {
+        "item": "minecraft:brain_coral_block"
+    }
+}

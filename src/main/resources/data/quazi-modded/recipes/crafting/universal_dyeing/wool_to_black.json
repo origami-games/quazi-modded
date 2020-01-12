@@ -1,8 +1,8 @@
 {
-    "type": "crafting_shapeless", "group": "universal_dyeing.wool",
+    "type": "crafting_shapeless",
+    "group": "quazi-modded:universal_dyeing.wool",
     "result": {
-        "item": "minecraft:black_wool",
-        "count": 1
+        "item": "minecraft:black_wool"
     },
     "ingredients": [
         {
