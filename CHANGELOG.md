@@ -6,7 +6,6 @@ v0.1.0-pre21 :: 1.15.x-fabric
 ```diff
 + Bees are attracted to Sugar Blocks as if they were flowers 🐝
 + Sugar Block texture
-
 - Reused code from VMulti (see KI:1)
 ```
 - Known issues
