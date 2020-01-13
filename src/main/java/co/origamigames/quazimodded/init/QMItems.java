@@ -35,8 +35,8 @@ public class QMItems {
     public static final Item HERMES_BOOTS = Registry.register(Registry.ITEM, new Identifier(QuaziModded.MOD_ID, "hermes_boots"), new HermesBootsItem(QMArmorMaterials.HERMES_BOOTS, EquipmentSlot.FEET, (new Item.Settings()).group(QuaziModded.ITEM_GROUP)));
     public static final Item LEAD_HELMET = Registry.register(Registry.ITEM, new Identifier(QuaziModded.MOD_ID, "lead_helmet"), new LeadHelmetItem(QMArmorMaterials.LEAD_HELMET, EquipmentSlot.HEAD, (new Item.Settings()).group(QuaziModded.ITEM_GROUP)));
 
-    public static final Item CALAMARI = registerFood("calamari", maxCount_default, 2, 1.2f);
-    public static final Item COOKED_CALAMARI = registerFoodSnack(cooked + "calamari", maxCount_default, 6, 7.2f);
+    public static final Item CALAMARI = registerFood("calamari", maxCount_default, 2, 0.3f);
+    public static final Item COOKED_CALAMARI = registerFoodSnack(cooked + "calamari", maxCount_default, 6, 0.6f);
 
     // public static final Item OWL_SPAWN_EGG = registerSpawnEgg("owl", maxCount_default, QMEntities.OWL, 0xFED639, 0xFBEBAE);
 

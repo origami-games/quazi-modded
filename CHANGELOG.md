@@ -2,6 +2,18 @@
 
 ** All v0.1.0-pre builds are internal group releases
 
+v0.1.0-pre22 :: 1.15.x-fabric
+```diff
++ Amethyst furnace recipe
++ Charcoal Block texture
++ Bookshelves, Charcoal Blocks, and Quilted Wool now act as fuel
+* Fixed Amethyst and Lead Ore mining levels
+* Fixed Cooked Calamari saturation
+* Fixed Amethyst Ore not dropping experience
+```
+
+---
+
 v0.1.0-pre21 :: 1.15.x-fabric
 ```diff
 + Bees are attracted to Sugar Blocks as if they were flowers 🐝

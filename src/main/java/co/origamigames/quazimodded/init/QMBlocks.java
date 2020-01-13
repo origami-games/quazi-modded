@@ -4,13 +4,13 @@ import co.origamigames.quazimodded.QuaziModded;
 import co.origamigames.quazimodded.block.*;
 import net.fabricmc.fabric.api.block.FabricBlockSettings;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
+import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.fabricmc.fabric.api.tools.FabricToolTags;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.FallingBlock;
 import net.minecraft.block.GlassBlock;
 import net.minecraft.block.Material;
-import net.minecraft.block.OreBlock;
 import net.minecraft.block.SlabBlock;
 import net.minecraft.block.WallBlock;
 import net.minecraft.client.render.RenderLayer;
@@ -24,11 +24,11 @@ public class QMBlocks {
     public static final Block ASH_BLOCK = new FallingBlock(
             FabricBlockSettings.copy(Blocks.SAND).breakByTool(FabricToolTags.PICKAXES).build());
 
-    public static final Block AMETHYST_ORE = new OreBlock(
-            FabricBlockSettings.of(Material.STONE).strength(3.0F, 3.0F).build());
+    public static final Block AMETHYST_ORE = new QMOreBlock(
+            FabricBlockSettings.of(Material.STONE).breakByTool(FabricToolTags.PICKAXES, 2).strength(3.0F, 3.0F).build());
     public static final Block AMETHYST_BLOCK = registerBlock(Blocks.DIAMOND_BLOCK);
-    public static final Block LEAD_ORE = new OreBlock(
-            FabricBlockSettings.of(Material.STONE).strength(3.0F, 3.0F).build());
+    public static final Block LEAD_ORE = new QMOreBlock(
+            FabricBlockSettings.of(Material.STONE).breakByTool(FabricToolTags.PICKAXES, 1).strength(3.0F, 3.0F).build());
     public static final Block LEAD_BLOCK = registerBlock(Blocks.IRON_BLOCK);
 
     public static final Block BAMBOO_BLOCK = registerBlock(Blocks.OAK_PLANKS);
@@ -155,6 +155,41 @@ public class QMBlocks {
         register("gravestone", GRAVESTONE);
 
         QMItems.registerBlockItems();
+    }
+
+    public static void addBlocksToFuelRegistry() {
+        fuelRegistryAddition(KELP_BLOCK, 4000); // 400t = 200s = 3m20s
+        fuelRegistryAddition(CHARCOAL_BLOCK, 16000); // 16000t = 800s = 13m20s
+        bookshelfFuelRegistryAddition(ACACIA_BOOKSHELF);
+        bookshelfFuelRegistryAddition(BIRCH_BOOKSHELF);
+        bookshelfFuelRegistryAddition(DARK_OAK_BOOKSHELF);
+        bookshelfFuelRegistryAddition(JUNGLE_BOOKSHELF);
+        bookshelfFuelRegistryAddition(SPRUCE_BOOKSHELF);
+        woolFuelRegistryAddition(WHITE_QUILTED_WOOL);
+        woolFuelRegistryAddition(ORANGE_QUILTED_WOOL);
+        woolFuelRegistryAddition(MAGENTA_QUILTED_WOOL);
+        woolFuelRegistryAddition(LIGHT_BLUE_QUILTED_WOOL);
+        woolFuelRegistryAddition(YELLOW_QUILTED_WOOL);
+        woolFuelRegistryAddition(LIME_QUILTED_WOOL);
+        woolFuelRegistryAddition(PINK_QUILTED_WOOL);
+        woolFuelRegistryAddition(GRAY_QUILTED_WOOL);
+        woolFuelRegistryAddition(LIGHT_GRAY_QUILTED_WOOL);
+        woolFuelRegistryAddition(CYAN_QUILTED_WOOL);
+        woolFuelRegistryAddition(PURPLE_QUILTED_WOOL);
+        woolFuelRegistryAddition(BLUE_QUILTED_WOOL);
+        woolFuelRegistryAddition(BROWN_QUILTED_WOOL);
+        woolFuelRegistryAddition(GREEN_QUILTED_WOOL);
+        woolFuelRegistryAddition(RED_QUILTED_WOOL);
+        woolFuelRegistryAddition(BLACK_QUILTED_WOOL);
+    }
+    private static void fuelRegistryAddition(Block block, int burnTime) {
+        FuelRegistry.INSTANCE.add(block, burnTime);
+    }
+    private static void bookshelfFuelRegistryAddition(Block block) {
+        fuelRegistryAddition(block, 300);
+    } // 300t = 15s
+    private static void woolFuelRegistryAddition(Block block) {
+        fuelRegistryAddition(block, 100);
     }
 
     private static void register(String id, Block block) {
