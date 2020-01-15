@@ -3,11 +3,10 @@
     "package": "co.origamigames.quazimodded.mixins",
     "compatibilityLevel": "JAVA_8",
     "mixins": [
-        "ItemsMixin"
-    ],
-    "client": [
+        "ItemsMixin",
         "PlayerEntityMixin"
     ],
+    "client": [],
     "injectors": {
         "defaultRequire": 1
     }

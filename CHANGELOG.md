@@ -2,6 +2,12 @@
 
 ** All v0.1.0-pre builds are internal group releases
 
+v0.1.0-pre23 :: 1.15.x-fabric
+```diff
+* Fixed Bow Infinity fix only working client-side
+```
+---
+
 v0.1.0-pre22 :: 1.15.x-fabric
 ```diff
 + Amethyst furnace recipe
