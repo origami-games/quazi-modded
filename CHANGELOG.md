@@ -2,6 +2,14 @@
 
 ** All v0.1.0-pre builds are internal group releases
 
+v0.1.0-pre24 :: 1.15.x-fabric
+```diff
++ Amethyst as a Beacon activator
++ Amethyst Block as a Beacon pyramid core
+* Fixed More Wood Bookshelves not boosting Enchanting Tables (v0.1.0-pre21.KI:1)
+```
+---
+
 v0.1.0-pre23 :: 1.15.x-fabric
 ```diff
 * Fixed Bow Infinity fix only working client-side
