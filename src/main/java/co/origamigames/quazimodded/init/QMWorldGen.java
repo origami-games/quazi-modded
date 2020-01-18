@@ -1,6 +1,5 @@
 package co.origamigames.quazimodded.init;
 
-import co.origamigames.quazimodded.init.QMBlocks;
 import net.minecraft.block.Block;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.world.biome.Biome;

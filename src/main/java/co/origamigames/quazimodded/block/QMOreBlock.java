@@ -1,7 +1,5 @@
 package co.origamigames.quazimodded.block;
 
-import java.util.Random;
-
 import co.origamigames.quazimodded.init.QMBlocks;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
@@ -11,6 +9,8 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.world.World;
+
+import java.util.Random;
 
 public class QMOreBlock extends Block {
     public QMOreBlock(Block.Settings settings) {

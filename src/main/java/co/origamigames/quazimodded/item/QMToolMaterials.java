@@ -1,11 +1,11 @@
 package co.origamigames.quazimodded.item;
 
-import java.util.function.Supplier;
-
 import co.origamigames.quazimodded.init.QMItems;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.util.Lazy;
+
+import java.util.function.Supplier;
 
 public enum QMToolMaterials implements ToolMaterial {
     LEAD(2, 191, 3, 1.5F, 22, () -> {

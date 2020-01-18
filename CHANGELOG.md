@@ -2,18 +2,32 @@
 
 ** All v0.1.0-pre builds are internal group releases
 
+v0.1.0-pre25 :: 1.15.x-fabric
+```diff
++ Amethyst Block texture
+- Block tag #quazi-modded:bee_pollinators
+- Graveyard biome (janky, commented out)
+* Simplified block registering
+```
+- Dependencies
+    + Added [SheetLib](https://www.curseforge.com/minecraft/mc-mods/sheet-lib)
+
+---
+
 v0.1.0-pre24 :: 1.15.x-fabric
 ```diff
 + Amethyst as a Beacon activator
 + Amethyst Block as a Beacon pyramid core
 * Fixed More Wood Bookshelves not boosting Enchanting Tables (v0.1.0-pre21.KI:1)
 ```
+
 ---
 
 v0.1.0-pre23 :: 1.15.x-fabric
 ```diff
 * Fixed Bow Infinity fix only working client-side
 ```
+
 ---
 
 v0.1.0-pre22 :: 1.15.x-fabric
@@ -35,8 +49,9 @@ v0.1.0-pre21 :: 1.15.x-fabric
 - Reused code from VMulti (see KI:1)
 ```
 - Known issues
-    1. More Wood Bookshelves currently don't boost Enchanting Tables
+    1. More Wood Bookshelves currently don't boost Enchanting Tables [fixed in v0.1.0-pre24]
         - Library causing crash issue, waiting for a fix
+
 ---
 
 v0.1.0-pre20 :: 1.15.x-fabric
@@ -190,7 +205,8 @@ v0.1.0-pre6 :: 1.15.x-fabric
 + Wheat Bundle
 + Many textures time
 ```
-*Known issue: Thatch walls don't connect* [fixed in pre-12]
+- Known issues
+    1. Thatch Walls don't connect [fixed in v0.1.0-pre12]
 
 ---
 

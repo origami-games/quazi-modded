@@ -14,14 +14,13 @@ public class QuaziModded implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-        QMBiomes.registerAll();
-        QMBlocks.registerAll();
+	// register biomes, blocks etc
+//        QMBiomes.registerAll();
         QMBlocks.addBlocksToFuelRegistry();
         QMLootAdditions.registerAll();
 
-        QMTags.init();
-
         new QMEntities();
+        new QMBlocks();
         new QMItems();
 
         // world gen

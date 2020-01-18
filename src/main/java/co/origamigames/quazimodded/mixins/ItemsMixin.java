@@ -1,16 +1,13 @@
 package co.origamigames.quazimodded.mixins;
 
-import org.objectweb.asm.Opcodes;
-import org.spongepowered.asm.mixin.Mixin;
-import org.spongepowered.asm.mixin.injection.ModifyArg;
-import org.spongepowered.asm.mixin.injection.Slice;
-
 import co.origamigames.quazimodded.init.QMItems;
-
-import org.spongepowered.asm.mixin.injection.At;
-
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
+import org.objectweb.asm.Opcodes;
+import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.injection.At;
+import org.spongepowered.asm.mixin.injection.ModifyArg;
+import org.spongepowered.asm.mixin.injection.Slice;
 
 @Mixin(Items.class)
 public class ItemsMixin {

@@ -1,9 +1,8 @@
 package co.origamigames.quazimodded.world.biome;
 
-import com.google.common.collect.ImmutableList;
-
 import co.origamigames.quazimodded.init.QMBlocks;
 import co.origamigames.quazimodded.world.gen.surfacebuilder.QMSurfaceBuilder;
+import com.google.common.collect.ImmutableList;
 import net.minecraft.block.Blocks;
 import net.minecraft.entity.EntityCategory;
 import net.minecraft.entity.EntityType;

@@ -1,7 +1,5 @@
 package co.origamigames.quazimodded.item;
 
-import java.util.function.Supplier;
-
 import co.origamigames.quazimodded.init.QMItems;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ArmorMaterial;
@@ -9,6 +7,8 @@ import net.minecraft.recipe.Ingredient;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.Lazy;
+
+import java.util.function.Supplier;
 
 public enum QMArmorMaterials implements ArmorMaterial {
     HERMES_BOOTS("hermes_boots", 92, 4, 2, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0, () -> {
