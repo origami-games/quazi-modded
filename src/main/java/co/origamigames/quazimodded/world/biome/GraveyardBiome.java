@@ -23,7 +23,7 @@ import net.minecraft.world.gen.surfacebuilder.SurfaceBuilder;
 
 public class GraveyardBiome extends Biome {
 
-    public static final RandomPatchFeatureConfig GRAVESTONE_CONFIG;
+    // public static final RandomPatchFeatureConfig GRAVESTONE_CONFIG;
     public static final BranchedTreeFeatureConfig OAK_TREE_NO_LEAVES_CONFIG;
     public static final BranchedTreeFeatureConfig FANCY_TREE_NO_LEAVES_CONFIG;
 
@@ -41,8 +41,8 @@ public class GraveyardBiome extends Biome {
     }
 
     public static void addFeatures(Biome biome) {
-        biome.addFeature(GenerationStep.Feature.VEGETAL_DECORATION, Feature.RANDOM_PATCH.configure(GRAVESTONE_CONFIG)
-                .createDecoratedFeature(Decorator.COUNT_HEIGHTMAP_DOUBLE.configure(new CountDecoratorConfig(1))));
+        // biome.addFeature(GenerationStep.Feature.VEGETAL_DECORATION, Feature.RANDOM_PATCH.configure(GRAVESTONE_CONFIG)
+        //         .createDecoratedFeature(Decorator.COUNT_HEIGHTMAP_DOUBLE.configure(new CountDecoratorConfig(1))));
 
         biome.addFeature(GenerationStep.Feature.VEGETAL_DECORATION,
                 Feature.RANDOM_SELECTOR
@@ -58,9 +58,9 @@ public class GraveyardBiome extends Biome {
     }
 
     static {
-        GRAVESTONE_CONFIG = (new RandomPatchFeatureConfig.Builder(
-                new SimpleStateProvider(QMBlocks.GRAVESTONE.getDefaultState()), new SimpleBlockPlacer())).tries(1)
-                        .build();
+        // GRAVESTONE_CONFIG = (new RandomPatchFeatureConfig.Builder(
+        //         new SimpleStateProvider(QMBlocks.GRAVESTONE.getDefaultState()), new SimpleBlockPlacer())).tries(1)
+        //                 .build();
 
         FANCY_TREE_NO_LEAVES_CONFIG = (new BranchedTreeFeatureConfig.Builder(new SimpleStateProvider(Blocks.OAK_LOG.getDefaultState()),
                 new SimpleStateProvider(Blocks.AIR.getDefaultState()), new BlobFoliagePlacer(0, 0))).build();

@@ -2,10 +2,19 @@
 
 ** All v0.1.0-pre builds are internal group releases
 
+v0.1.0-pre27 :: 1.15.x-fabric
+```diff
+- Gravestone (commented out)
+* Fixed SheetLib version
+```
+
+---
+
 v0.1.0-pre26 :: 1.15.x-fabric
 ```diff
 * Fixed SheetLib dependency version
 ```
+
 ---
 
 v0.1.0-pre25 :: 1.15.x-fabric

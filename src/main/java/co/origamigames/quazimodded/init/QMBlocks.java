@@ -86,7 +86,7 @@ public class QMBlocks {
     public static final Block RED_QUILTED_WOOL = registerCopyBlock("red_quilted_wool", Blocks.RED_WOOL);
     public static final Block BLACK_QUILTED_WOOL = registerCopyBlock("black_quilted_wool", Blocks.BLACK_WOOL);
 
-    public static final Block GRAVESTONE = registerCopyBlock("gravestone", Blocks.STONE);
+    // public static final Block GRAVESTONE = registerCopyBlock("gravestone", Blocks.STONE);
 
     public static void addBlocksToFuelRegistry() {
         fuelRegistryAddition(KELP_BLOCK, 4000); // 400t = 200s = 3m20s
