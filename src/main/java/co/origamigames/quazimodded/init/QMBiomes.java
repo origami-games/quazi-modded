@@ -11,20 +11,14 @@ import net.minecraft.world.biome.Biome;
 
 public class QMBiomes {
 
-    public static final Biome GRAVEYARD = register("graveyard", new GraveyardBiome());
+    public static final Biome GRAVEYARD = registerOverworldBiome("graveyard", new GraveyardBiome(), .5d);
 
-    public static void registerAll() {
-        addOverworldBiome(GRAVEYARD, .5d);
-    }
-
-    private static void addOverworldBiome(Biome biome, double weight) {
+    private static Biome registerOverworldBiome(String id, Biome biome, double weight) {
         OverworldBiomes.addContinentalBiome(biome, OverworldClimate.DRY, weight / 2);
         OverworldBiomes.addContinentalBiome(biome, OverworldClimate.TEMPERATE, weight / 2);
 
         FabricBiomes.addSpawnBiome(biome);
-    }
 
-    private static Biome register(String id, Biome biome) {
         return Registry.register(Registry.BIOME, new Identifier(QuaziModded.MOD_ID, id), biome);
     }
 }

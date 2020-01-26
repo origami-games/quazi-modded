@@ -3,6 +3,7 @@ package co.origamigames.quazimodded.init;
 import co.origamigames.quazimodded.QuaziModded;
 import co.origamigames.quazimodded.block.*;
 import co.origamigames.sheet.SheetLib;
+import co.origamigames.sheet.block.PistonImmovableBlock;
 import net.fabricmc.fabric.api.block.FabricBlockSettings;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.registry.FuelRegistry;

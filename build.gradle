@@ -7,7 +7,7 @@ sourceCompatibility = JavaVersion.VERSION_1_8
 targetCompatibility = JavaVersion.VERSION_1_8
 
 archivesBaseName = project.archives_base_name
-version = project.mod_version
+version = project.mod_version + "+" + project.minecraft_version
 group = project.maven_group
 
 minecraft {
@@ -33,7 +33,7 @@ dependencies {
 	include "io.github.cottonmc:VMulti:${project.vmulti_version}"
 	modImplementation "io.github.cottonmc:BeeCompatible:${project.beecompatible_version}"
 	include "io.github.cottonmc:BeeCompatible:${project.beecompatible_version}"
-	modImplementation "com.gitlab.origami-games:SheetLib:master"
+	modImplementation "com.gitlab.origami-games:SheetLib:v${project.sheetlib_version}"
 }
 
 processResources {

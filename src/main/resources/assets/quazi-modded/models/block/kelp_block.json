@@ -1,6 +1,25 @@
 {
-    "parent": "block/cube_all",
+    "parent": "block/block",
     "textures": {
-        "all": "quazi-modded:block/kelp_block"
-    }
+        "particle": "quazi-modded:block/kelp_block_side",
+        "down": "quazi-modded:block/kelp_block_bottom",
+        "up": "quazi-modded:block/kelp_block_top",
+        "north": "quazi-modded:block/kelp_block_side",
+        "east": "quazi-modded:block/kelp_block_side",
+        "south": "quazi-modded:block/kelp_block_side",
+        "west": "quazi-modded:block/kelp_block_side"
+    },
+    "elements": [
+        {   "from": [ 0, 0, 0 ],
+            "to": [ 16, 16, 16 ],
+            "faces": {
+                "down":  { "texture": "#down", "cullface": "down" },
+                "up":    { "texture": "#up", "cullface": "up" },
+                "north": { "texture": "#north", "cullface": "north" },
+                "south": { "uv": [16, 0, 0, 16], "texture": "#south", "cullface": "south" },
+                "west":  { "texture": "#west", "cullface": "west" },
+                "east":  { "uv": [16, 0, 0, 16], "texture": "#east", "cullface": "east" }
+            }
+        }
+    ]
 }

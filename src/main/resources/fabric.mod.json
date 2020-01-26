@@ -38,7 +38,7 @@
         "fabricloader": ">=0.7.2",
         "fabric": "*",
         "minecraft": "1.15.x",
-        "sheet-lib": "*"
+        "sheet-lib": ">=1.1.0"
     },
     "suggests": {
         "flamingo": "*"

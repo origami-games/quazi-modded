@@ -2,6 +2,17 @@
 
 ** All v0.1.0-pre builds are internal group releases
 
+v0.1.0-pre28 :: 1.15.fabric
+```diff
++ Lead Block texture
++ Kelp Block texture
++ Load message
+* Converted more stuff to SheetLib
+* Updated to 1.15.2
+```
+
+---
+
 v0.1.0-pre27 :: 1.15.x-fabric
 ```diff
 - Gravestone (commented out)
