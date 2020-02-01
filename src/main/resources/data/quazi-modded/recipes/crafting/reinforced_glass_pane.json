@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "quazi-modded:reinforced_glass_pane",
+    "pattern": [
+        "###",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "quazi-modded:reinforced_glass"
+        }
+    },
+    "result": {
+        "item": "quazi-modded:reinforced_glass_pane",
+        "count": 16
+    }
+}

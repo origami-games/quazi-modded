@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "quazi-modded:kelp_block"
+        }
+    ],
+    "result": {
+        "item": "minecraft:kelp",
+        "count": 9
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#",
+        "S",
+        "B"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:stick"
+        },
+        "S": {
+            "item": "minecraft:string"
+        },
+        "B": {
+            "item": "quazi-modded:beeswax"
+        }
+    },
+    "result": {
+        "item": "quazi-modded:candle",
+        "count": 2
+    }
+}

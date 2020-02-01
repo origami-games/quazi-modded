@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:smelting",
+    "ingredient": {
+        "item": "quazi-modded:amethyst_ore"
+    },
+    "result": "quazi-modded:amethyst",
+    "experience": 0.7,
+    "cookingtime": 200
+}

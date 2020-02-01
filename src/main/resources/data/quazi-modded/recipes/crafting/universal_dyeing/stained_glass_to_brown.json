@@ -1,0 +1,21 @@
+{
+    "type": "crafting_shaped",
+    "group": "quazi-modded:universal_dyeing.glass",
+    "pattern": [
+        "###",
+        "#$#",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "tag": "minecraft:stained_glass"
+        },
+        "$": {
+            "item": "minecraft:brown_dye"
+        }
+    },
+    "result": {
+        "item": "minecraft:brown_stained_glass",
+        "count": 8
+    }
+}

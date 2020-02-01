@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "quazi-modded:reinforced_glass_pane",
+    "pattern": [
+        " X ",
+        "X#X",
+        " X "
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:glass_pane"
+        },
+        "X": {
+            "item": "minecraft:iron_ingot"
+        }
+    },
+    "result": {
+        "item": "quazi-modded:reinforced_glass_pane"
+    }
+}

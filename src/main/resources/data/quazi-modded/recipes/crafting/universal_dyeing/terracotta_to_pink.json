@@ -1,0 +1,21 @@
+{
+    "type": "crafting_shaped",
+    "group": "quazi-modded:universal_dyeing.terracotta",
+    "pattern": [
+        "###",
+        "#$#",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "tag": "minecraft:terracotta"
+        },
+        "$": {
+            "item": "minecraft:pink_dye"
+        }
+    },
+    "result": {
+        "item": "minecraft:pink_terracotta",
+        "count": 8
+    }
+}

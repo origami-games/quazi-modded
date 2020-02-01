@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "quazi-modded:glass_shards_to_glass",
+    "pattern": [
+        "##",
+        "##"
+    ],
+    "key": {
+        "#": {
+            "item": "quazi-modded:orange_glass_shard"
+        }
+    },
+    "result": {
+        "item": "minecraft:orange_stained_glass"
+    }
+}

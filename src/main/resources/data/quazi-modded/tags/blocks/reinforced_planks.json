@@ -1,0 +1,11 @@
+{
+    "replace": false,
+    "values": [
+        "quazi-modded:reinforced_oak_planks",
+        "quazi-modded:reinforced_spruce_planks",
+        "quazi-modded:reinforced_birch_planks",
+        "quazi-modded:reinforced_jungle_planks",
+        "quazi-modded:reinforced_acacia_planks",
+        "quazi-modded:reinforced_dark_oak_planks"
+    ]
+}

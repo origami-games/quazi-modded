@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "quazi-modded:quilted_wool",
+    "pattern": [
+        " S ",
+        "SWS",
+        " S "
+    ],
+    "key": {
+        "W": {
+            "item": "minecraft:gray_wool",
+            "count": 3
+        },
+        "S": {
+            "item": "minecraft:string"
+        }
+    },
+    "result": {
+        "item": "quazi-modded:gray_quilted_wool",
+        "count": 4
+    }
+}

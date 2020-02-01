@@ -1,0 +1,15 @@
+{
+    "type": "crafting_shapeless",
+    "group": "quazi-modded:universal_dyeing.wool",
+    "result": {
+        "item": "minecraft:light_gray_wool"
+    },
+    "ingredients": [
+        {
+            "tag": "minecraft:wool"
+        },
+        {
+            "item": "minecraft:light_gray_dye"
+        }
+    ]
+}

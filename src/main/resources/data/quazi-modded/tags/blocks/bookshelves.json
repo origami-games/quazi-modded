@@ -1,0 +1,11 @@
+{
+    "replace": false,
+    "values": [
+        "minecraft:bookshelf",
+        "quazi-modded:acacia_bookshelf",
+        "quazi-modded:birch_bookshelf",
+        "quazi-modded:dark_oak_bookshelf",
+        "quazi-modded:jungle_bookshelf",
+        "quazi-modded:spruce_bookshelf"
+    ]
+}

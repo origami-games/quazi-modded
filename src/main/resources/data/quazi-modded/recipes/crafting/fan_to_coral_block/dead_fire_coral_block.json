@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "quazi-modded:fan_to_coral_block",
+    "pattern": [
+        "##",
+        "##"
+    ],
+    "key": {
+        "#": {
+            "tag": "quazi-modded:dead_fire_corals"
+        }
+    },
+    "result": {
+        "item": "minecraft:dead_fire_coral_block"
+    }
+}

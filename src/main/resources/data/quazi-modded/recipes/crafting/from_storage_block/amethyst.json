@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "quazi-modded:amethyst_block"
+        }
+    ],
+    "result": {
+        "item": "quazi-modded:amethyst",
+        "count": 9
+    }
+}

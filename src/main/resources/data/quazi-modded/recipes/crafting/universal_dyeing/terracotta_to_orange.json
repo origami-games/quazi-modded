@@ -1,0 +1,21 @@
+{
+    "type": "crafting_shaped",
+    "group": "quazi-modded:universal_dyeing.terracotta",
+    "pattern": [
+        "###",
+        "#$#",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "tag": "minecraft:terracotta"
+        },
+        "$": {
+            "item": "minecraft:orange_dye"
+        }
+    },
+    "result": {
+        "item": "minecraft:orange_terracotta",
+        "count": 8
+    }
+}

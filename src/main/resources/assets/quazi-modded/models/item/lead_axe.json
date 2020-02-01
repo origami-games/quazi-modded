@@ -1,0 +1,6 @@
+{
+    "parent": "item/handheld",
+    "textures": {
+        "layer0": "quazi-modded:item/lead_axe"
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "parent": "block/slab",
+    "textures": {
+        "bottom": "quazi-modded:block/thatch",
+        "top": "quazi-modded:block/thatch",
+        "side": "quazi-modded:block/thatch"
+    }
+}
