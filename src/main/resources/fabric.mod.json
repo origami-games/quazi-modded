@@ -17,8 +17,9 @@
     ],
     "contact": {
         "homepage": "https://origami-games.github.io/quazi-modded",
-        "sources": "https://gitlab.com/origami-games/quazi-modded",
-        "issues": "https://gitlab.com/origami-games/quazi-modded/issues"
+        "sources": "https://github.com/origami-games/quazi-modded",
+        "issues": "https://github.com/origami-games/quazi-modded/issues",
+        "wiki": "https://github.com/origami-games/quazi-modded/wiki"
     },
     "license": "GPL-3.0",
     "icon": "pack.png",
@@ -38,7 +39,7 @@
         "fabricloader": ">=0.7.2",
         "fabric": "*",
         "minecraft": "1.15.x",
-        "sheet-lib": ">=1.3.0"
+        "sheet-lib": ">=1.4.0"
     },
     "suggests": {
         "flamingo": "*"

@@ -1,7 +1,9 @@
 # Quazi-Modded
 
-[![Discord Server](https://img.shields.io/discord/594411513457147904.svg?color=blueviolet)](https://discord.io/origami)
-[![](https://img.shields.io/badge/api-fabric-orange.svg)](https://www.curseforge.com/minecraft/mc-mods/fabric-api/files)
+[![](https://img.shields.io/badge/api-fabric-orange.svg?style=flat-square)](https://www.curseforge.com/minecraft/mc-mods/fabric-api/files)
+[![Patreon](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Fshieldsio-patreon.herokuapp.com%2Forigamigames&style=flat-square)](https://patreon.com/origamigames)
+[![Discord Server](https://img.shields.io/discord/594411513457147904.svg?color=blueviolet&style=flat-square)](https://discord.io/origami)
+[![](https://img.shields.io/github/v/release/origami-games/quazi-modded?include_prereleases&style=flat-square)](https://github.com/origami-games/quazi-modded/releases)
 
 Quazi-Modded is a Minecraft mod that aims to add smaller, standalone features to survival mode. It has a focus on consistent, vanilla-style art direction and creating an atmosphere.
 

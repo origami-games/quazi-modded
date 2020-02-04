@@ -5,18 +5,15 @@ import co.origamigames.quazimodded.block.*;
 import co.origamigames.sheet.SheetLib;
 import co.origamigames.sheet.block.PistonImmovableBlock;
 import net.fabricmc.fabric.api.block.FabricBlockSettings;
-import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
-import net.fabricmc.fabric.api.tag.TagRegistry;
 import net.fabricmc.fabric.api.tools.FabricToolTags;
 import net.minecraft.block.*;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.tag.Tag;
-import net.minecraft.util.Identifier;
 
 public class QMBlocks {
     // define blocks
     public static final Block ASH_BLOCK = register("ash_block", new FallingBlock(
-            FabricBlockSettings.copy(Blocks.SAND).breakByTool(FabricToolTags.PICKAXES).strength(1.5F, 6.0F).build()));
+            FabricBlockSettings.copy(Blocks.SAND).breakByTool(FabricToolTags.PICKAXES).strength(3.0F, 1.5F).build()));
 
     public static final Block AMETHYST_ORE = register("amethyst_ore", new QMOreBlock(
             FabricBlockSettings.of(Material.STONE).breakByTool(FabricToolTags.PICKAXES, 2).strength(3.0F, 3.0F).build()));
@@ -126,10 +123,10 @@ public class QMBlocks {
     }
 
     private static void flammableRegistryAddition(Block block, int burnChance, int spreadChance) {
-        FlammableBlockRegistry.getDefaultInstance().add(block, burnChance, spreadChance);
+        SheetLib.addToFlammableBlockRegistry(block, burnChance, spreadChance);
     }
     private static void flammableRegistryAddition(Tag<Block> blockTag, int burnChance, int spreadChance) {
-        FlammableBlockRegistry.getDefaultInstance().add(blockTag, burnChance, spreadChance);
+        SheetLib.addToFlammableBlockRegistry(blockTag, burnChance, spreadChance);
     }
 
     private static void fuelRegistryAddition(Block block, int burnTime) {

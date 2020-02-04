@@ -1,6 +1,15 @@
 # Changelog
 
-v0.1.0 :: 1.15.x-fabric
+v1.0.1 :: 1.15.x-fabric
+```diff
+* Fix Ash Block strength
+* Move flammable block registry handling to SheetLib
+* Change contact links from GitLab to GitHub
+```
+
+---
+
+v1.0.0 :: 1.15.x-fabric
 ```diff
 + Candle Block
     * When placed is unlit, but can be lit via Flint and Steel

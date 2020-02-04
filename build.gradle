@@ -33,7 +33,7 @@ dependencies {
 	include "io.github.cottonmc:VMulti:${project.vmulti_version}"
 	modImplementation "io.github.cottonmc:BeeCompatible:${project.beecompatible_version}"
 	include "io.github.cottonmc:BeeCompatible:${project.beecompatible_version}"
-	modImplementation "com.gitlab.origami-games:SheetLib:v${project.sheetlib_version}"
+	modImplementation "com.github.origami-games:SheetLib:v${project.sheetlib_version}"
 }
 
 processResources {
