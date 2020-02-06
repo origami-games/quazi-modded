@@ -11,10 +11,10 @@ import net.minecraft.util.Lazy;
 import java.util.function.Supplier;
 
 public enum QMArmorMaterials implements ArmorMaterial {
-    HERMES_BOOTS("hermes_boots", 92, 4, 2, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0, () -> {
+    HERMES_BOOTS("hermes_boots", 92, 4, 2, 0, 0, SoundEvents.ITEM_ARMOR_EQUIP_IRON, () -> {
         return null;
     }),
-    LEAD_HELMET("lead_helmet", 144, 25, 1, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0, () -> {
+    LEAD_HELMET("lead_helmet", 144, 25, 1, 0, 0.05F, SoundEvents.ITEM_ARMOR_EQUIP_IRON, () -> {
         return Ingredient.ofItems(QMItems.LEAD_INGOT);
     });
 
@@ -22,19 +22,21 @@ public enum QMArmorMaterials implements ArmorMaterial {
     private final int durability;
     private final int enchantability;
     private final int protectionAmount;
-    private final SoundEvent equipSound;
     private final float toughness;
+    private final float knockbackResistance;
+    private final SoundEvent equipSound;
     private final Lazy<Ingredient> repairIngredient;
 
     @SuppressWarnings("all")
-    private QMArmorMaterials(String name, int durability, int enchantability, int protectionAmount, SoundEvent equipSound, float toughness,
+    private QMArmorMaterials(String name, int durability, int enchantability, int protectionAmount, float toughness, float knockbackResistance, SoundEvent equipSound,
             Supplier<Ingredient> repairIngredient) {
         this.name = name;
         this.durability = durability;
         this.enchantability = enchantability;
         this.protectionAmount = protectionAmount;
-        this.equipSound = equipSound;
         this.toughness = toughness;
+        this.knockbackResistance = knockbackResistance;
+        this.equipSound = equipSound;
         this.repairIngredient = new Lazy(repairIngredient);
     }
 
@@ -71,5 +73,10 @@ public enum QMArmorMaterials implements ArmorMaterial {
     @Override
     public float getToughness() {
         return this.toughness;
+    }
+
+    @Override
+    public float method_24355() {
+        return this.knockbackResistance;
     }
 }
