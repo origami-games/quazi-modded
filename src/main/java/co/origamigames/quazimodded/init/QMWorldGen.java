@@ -6,8 +6,14 @@ import net.minecraft.world.gen.feature.OreFeatureConfig;
 
 public class QMWorldGen {
     public static void addFeatures() {
+        oreGeneration();
+        ashBlockGeneration();
+    }
+    private static void oreGeneration() {
         addOverworldOre(QMBlocks.AMETHYST_ORE, 8, 1, 0, 0, 16);
         addOverworldOre(QMBlocks.LEAD_ORE, 8, 1, 0, 0, 64);
+    }
+    private static void ashBlockGeneration() {
         addToMagmaDecorator(QMBlocks.ASH_BLOCK, 35, 15, OreFeatureConfig.Target.NETHERRACK);
     }
 

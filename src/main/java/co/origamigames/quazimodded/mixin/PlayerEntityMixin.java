@@ -1,4 +1,4 @@
-package co.origamigames.quazimodded.mixins;
+package co.origamigames.quazimodded.mixin;
 
 import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.enchantment.Enchantments;

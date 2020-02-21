@@ -1,12 +1,15 @@
 {
     "required": true,
-    "package": "co.origamigames.quazimodded.mixins",
+    "package": "co.origamigames.quazimodded.mixin",
     "compatibilityLevel": "JAVA_8",
     "mixins": [
         "ItemsMixin",
-        "PlayerEntityMixin"
+        "PlayerEntityMixin",
+        "DefaultBiomeFeaturesMixin"
     ],
-    "client": [],
+    "client": [
+        "OverworldDimensionMixin"
+    ],
     "injectors": {
         "defaultRequire": 1
     }

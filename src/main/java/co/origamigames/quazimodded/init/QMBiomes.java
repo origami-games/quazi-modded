@@ -6,7 +6,6 @@ import co.origamigames.sheet.SheetLib;
 import net.fabricmc.fabric.api.biomes.v1.OverworldClimate;
 import net.minecraft.world.biome.Biome;
 
-// currently all unused
 public class QMBiomes {
     public static final Biome GRAVEYARD = overworldBiome("graveyard", new GraveyardBiome(), OverworldClimate.COOL, .5d);
 

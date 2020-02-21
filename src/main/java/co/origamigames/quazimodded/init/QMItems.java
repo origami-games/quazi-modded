@@ -16,18 +16,12 @@ public class QMItems {
     public static final int max_count_default = 64;
 
     // define items
-//    public static final Item ASH = register("ash", max_count_default);
     public static final Item ASH = register("ash", max_count_default);
     public static final Item BEESWAX = register("beeswax", max_count_default);
 
     public static final Item AMETHYST = register("amethyst", max_count_default);
 
     public static final Item LEAD_INGOT = register("lead_ingot", max_count_default);
-    // public static final Item LEAD_SWORD = Registry.register(Registry.ITEM, new Identifier(QuaziModded.MOD_ID, "lead_sword"), new SwordBase(QMToolMaterials.LEAD, 3, -2.4F, (new Item.Settings()).group(QuaziModded.ITEM_GROUP)));
-    // public static final Item LEAD_SHOVEL = Registry.register(Registry.ITEM, new Identifier(QuaziModded.MOD_ID, "lead_shovel"), new ShovelBase(QMToolMaterials.LEAD, 1.5F, -3.0F, (new Item.Settings()).group(QuaziModded.ITEM_GROUP)));
-    // public static final Item LEAD_PICKAXE = Registry.register(Registry.ITEM, new Identifier(QuaziModded.MOD_ID, "lead_pickaxe"), new PickaxeBase(QMToolMaterials.LEAD, 1, -2.8F, (new Item.Settings()).group(QuaziModded.ITEM_GROUP)));
-    // public static final Item LEAD_AXE = Registry.register(Registry.ITEM, new Identifier(QuaziModded.MOD_ID, "lead_axe"), new AxeBase(QMToolMaterials.LEAD, 6.0F, -3.1F, (new Item.Settings()).group(QuaziModded.ITEM_GROUP)));
-    // public static final Item LEAD_HOE = Registry.register(Registry.ITEM, new Identifier(QuaziModded.MOD_ID, "lead_hoe"), new HoeBase(QMToolMaterials.LEAD, -1.0F, (new Item.Settings()).group(QuaziModded.ITEM_GROUP)));
 
     public static final Item HERMES_BOOTS = Registry.register(Registry.ITEM, new Identifier(QuaziModded.MOD_ID, "hermes_boots"), new HermesBootsItem(QMArmorMaterials.HERMES_BOOTS, EquipmentSlot.FEET, (new Item.Settings()).group(QuaziModded.ITEM_GROUP)));
 //    public static final Item LEAD_HELMET = Registry.register(Registry.ITEM, new Identifier(QuaziModded.MOD_ID, "lead_helmet"), new LeadHelmetItem(QMArmorMaterials.LEAD_HELMET, EquipmentSlot.HEAD, (new Item.Settings()).group(QuaziModded.ITEM_GROUP)));

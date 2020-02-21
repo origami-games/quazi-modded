@@ -18,15 +18,13 @@ public class QuaziModded implements ModInitializer {
     public void onInitialize() {
         LOGGER.info("[Quazi-Modded] Loaded");
 
-        // register stuff
+        new QMItems();
+        new QMBlocks();
+        new QMBiomes();
+
         QMLootAdditions.registerAll();
         QMBlocks.addAdditionalBlockProperties();
 
-        // new QMBiomes();
-        new QMBlocks();
-        new QMItems();
-
-        // world gen
         QMWorldGen.addFeatures();
     }
 }

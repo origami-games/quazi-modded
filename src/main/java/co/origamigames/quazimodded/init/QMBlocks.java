@@ -130,7 +130,7 @@ public class QMBlocks {
     }
 
     private static void fuelRegistryAddition(Block block, int burnTime) {
-        SheetLib.addBlockToFuelRegistry(block, burnTime);
+        SheetLib.addToFuelRegistry(block, burnTime);
     }
     private static void bookshelfFuelRegistryAddition(Block block) {
         fuelRegistryAddition(block, 300);

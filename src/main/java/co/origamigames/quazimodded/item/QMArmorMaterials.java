@@ -76,7 +76,7 @@ public enum QMArmorMaterials implements ArmorMaterial {
     }
 
     @Override
-    public float method_24355() {
+    public float getKnockbackResistance() {
         return this.knockbackResistance;
     }
 }

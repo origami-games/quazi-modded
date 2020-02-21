@@ -1,4 +1,4 @@
-package co.origamigames.quazimodded.mixins;
+package co.origamigames.quazimodded.mixin;
 
 import co.origamigames.quazimodded.init.QMItems;
 import net.minecraft.item.Item;
