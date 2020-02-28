@@ -30,8 +30,8 @@ public class CandleBlock extends Block {
 
     public CandleBlock(Settings settings) {
         super(settings);
-        this.setDefaultState(
-                (BlockState) ((BlockState) ((BlockState) this.stateManager.getDefaultState()).with(LIT, false)));
+        setDefaultState(
+                stateManager.getDefaultState().with(LIT, false));
     }
 
     public VoxelShape getOutlineShape(BlockState state, BlockView view, BlockPos pos, EntityContext ePos) {
@@ -53,9 +53,7 @@ public class CandleBlock extends Block {
 
             if (!player.isCreative()) {
                 ItemStack stack = player.getStackInHand(hand);
-				stack.damage(1, player, ((p) -> {
-				p.sendToolBreakStatus(hand);
-				}));
+				stack.damage(1, player, ((p) -> p.sendToolBreakStatus(hand)));
 			}
 
             return ActionResult.SUCCESS;
@@ -66,12 +64,12 @@ public class CandleBlock extends Block {
 
     @Override
     public int getLuminance(BlockState state) {
-        return (boolean) state.get(LIT) ? super.getLuminance(state) : 0;
+        return state.get(LIT) ? super.getLuminance(state) : 0;
     }
 
     public BlockState getStateForNeighborUpdate(BlockState state, Direction facing, BlockState neighborState,
             IWorld world, BlockPos pos, BlockPos neighborPos) {
-        return facing == Direction.DOWN && !this.canPlaceAt(state, world, pos) ? Blocks.AIR.getDefaultState()
+        return facing == Direction.DOWN && !canPlaceAt(state, world, pos) ? Blocks.AIR.getDefaultState()
                 : super.getStateForNeighborUpdate(state, facing, neighborState, world, pos, neighborPos);
     }
 
