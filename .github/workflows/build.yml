@@ -1,0 +1,32 @@
+name: Build Mod
+on: [push, pull_request]
+jobs:
+  gradle:
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+        java-version:
+          - 8
+    runs-on: ${{ matrix.os }}
+    steps:
+      - name: Checkout Project
+        uses: actions/checkout@v1
+        with:
+          lfs: true
+
+      - name: Setup Java
+        uses: actions/setup-java@v1
+        with:
+          java-version: ${{ matrix.java-version }}
+
+      - name: Build Mod
+        uses: eskatos/gradle-command-action@v1
+        with:
+          arguments: build
+          gradle-executable: ./gradlew
+
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v1
+        with:
+          name: Mod Builds
+          path: build/libs
