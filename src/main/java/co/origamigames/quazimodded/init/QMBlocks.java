@@ -130,7 +130,7 @@ public class QMBlocks {
     }
 
     private static void fuelRegistryAddition(Block block, int burnTime) {
-        SheetLib.addBlockToFuelRegistry(block, burnTime);
+        SheetLib.addToFuelRegistry(block, burnTime);
     }
     private static void bookshelfFuelRegistryAddition(Block block) {
         fuelRegistryAddition(block, 300);
@@ -139,18 +139,10 @@ public class QMBlocks {
         fuelRegistryAddition(block, 100);
     }
 
-    private static Block register(String id, Block block) { // calls all block/block item registers
-        return SheetLib.block(QuaziModded.MOD_ID, id, block, QuaziModded.ITEM_GROUP);
+    private static Block register(String id, Block block) {
+        return SheetLib.block(QuaziModded.MOD_ID, id, QuaziModded.ITEM_GROUP, block);
     }
-    private static Block registerCopyBlock(String id, Block copyBlock) { // registers a block with the same properties as the passed in block
-        return SheetLib.copiedBlock(QuaziModded.MOD_ID, id, copyBlock, QuaziModded.ITEM_GROUP);
-    }
-
-    public static void setBlockRenderLayers() {
-        setTransparencyRenderLayer(REINFORCED_GLASS);
-        setTransparencyRenderLayer(REINFORCED_GLASS_PANE);
-    }
-    private static void setTransparencyRenderLayer(Block block) {
-        SheetLib.setTransparencyRenderLayer(block);
+    private static Block registerCopyBlock(String id, Block copyBlock) {
+        return SheetLib.copiedBlock(QuaziModded.MOD_ID, id, QuaziModded.ITEM_GROUP, copyBlock);
     }
 }
